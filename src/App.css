@@ -34,9 +34,17 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 15px;
+}
+
+h4 {
+  color: gray;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.row {
+  display: flex;
 }

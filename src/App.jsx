@@ -1,35 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Card from "./Components/Card";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>Resorts Lite</h1>
+      <hr></hr>
+      <div className="row">
+        <Card
+          image="src/assets/images/1.jpg"
+          location="Indonesia"
+          name="Gili Air Hotel"
+          rate="4.8"
+          price="$589"
+        />
+
+        <Card
+          image="src/assets/images/2.jpg"
+          location="Seychelles"
+          name="Hilton Resort"
+          rate="4.2"
+          price="$629"
+        />
+
+        <Card
+          image="src/assets/images/3.jpg"
+          location="US Virgin Islands"
+          name="Goa Resort"
+          rate="3.5"
+          price="$485"
+        />
+
+        <Card
+          image="src/assets/images/4.jpg"
+          location="Bahamas"
+          name="Kuredu Resort"
+          rate="4.1"
+          price="$729"
+        />
+
+        <Card
+          image="src/assets/images/5.jpg"
+          location="Mauritius"
+          name="Trou D'eau Douce"
+          rate="4.9"
+          price="$877"
+        />
+
+        <Card
+          image="src/assets/images/6.jpg"
+          location="Bermuda"
+          name="Staniel Cay Hotel"
+          rate="3.2"
+          price="$365"
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
